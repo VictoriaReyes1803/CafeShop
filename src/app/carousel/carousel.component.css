@@ -1,0 +1,31 @@
+.carousel-container {
+    width: 100%;
+    height: 65vh; 
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f9f4ef; /* Color de fondo */
+    overflow: hidden;
+  }
+  
+  .carousel-item {
+    position: absolute;
+    opacity: 0; /* Inicialmente invisible */
+    transition: opacity 1s ease, filter 1s ease;
+    filter: brightness(0.7); /* Más oscuro por defecto */
+  }
+  
+  .carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  
+  .carousel-item.active {
+    opacity: 1; /* Imagen visible */
+    filter: brightness(1.2); /* Iluminar imagen */
+    z-index: 1;
+  }
+  
