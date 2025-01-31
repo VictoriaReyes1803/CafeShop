@@ -6,6 +6,7 @@ body {
     font-family: var(--typeBasePrimary), var(--typeBaseFallback);
     color: #fefefe;
     scroll-behavior: smooth;
+    background: linear-gradient(to bottom, #cdb99f, #dab896, #a67c52);
   }
   
   .container {
@@ -57,22 +58,28 @@ body {
     text-align: center;
     margin: 30px 0;
     background-color: #1d1d1c6b;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
   }
   
   .welcome h2 {
     font-size: 2.9rem;
-    color: #ffffff;
+    
     font-family: 'Apple Garamond Light', serif;
-    text-shadow: 2px 5px 5px rgba(0, 0, 0, 0.7);
+
   }
+  .welcome p, h2 {
+    color: #5a3e2b;
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
+  }
+
   
   .welcome p {
     font-size: 1.5rem;
     margin: 20px 0;
     font-family: var(--typeBasePrimary), var(--typeBaseFallback);
     line-height: 1.8;
-    color: #ffffff;
-    text-shadow: 2px 5px 5px rgba(0, 0, 0, 0.7);
+ 
+    
   }
   
   .welcome button  {
@@ -91,9 +98,10 @@ body {
   
   /* Menu Section */
   .menu {
-    margin: 40px 0;
+ 
     text-align: center;
-    height: 90vh;
+    height: 100vh;
+
   }
   
   .menu h2 {
@@ -111,7 +119,8 @@ body {
   
   .menu-item {
     text-align: center;
-    transition: transform 0.3s ease; /* Transición para toda la tarjeta */
+    transition: transform 0.3s ease; 
+   
   }
   
   .menu-item img {
@@ -137,7 +146,7 @@ body {
   
   /* Footer */
   .footer {
-    background-color: #6f4e37;
+    background: #5a3e2b;
     color: white;
     padding: 20px;
     text-align: center;
@@ -187,7 +196,7 @@ body {
   
   .about {
     padding: 40px;
-    background-color: #f9f4ef;
+
     color: #333;
     height: 100vh;
     text-align: center;
@@ -213,14 +222,18 @@ body {
   }
 
 
-
+  .about, .menu, .contact {
+    padding: 50px 20px;
+    color: #5a3e2b;
+    background: linear-gradient(to right, #dbcfbb, #dab896);
+  }
 
   .contact {
     text-align: center;
-    margin: 50px 0;
+
     height: 95vh;
     padding: 40px 20px;
-    background-color: #eee0d3;
+
   }
   
   .contact h2 {
