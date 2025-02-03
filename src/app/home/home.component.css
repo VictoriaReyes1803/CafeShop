@@ -1,13 +1,5 @@
 /* General styles */
-body {
-    margin: 0;
-    font-family: 'Arial', sans-serif;
-    background-color: #f9f4ef;
-    font-family: var(--typeBasePrimary), var(--typeBaseFallback);
-    color: #fefefe;
-    scroll-behavior: smooth;
-    background: linear-gradient(to bottom, #cdb99f, #dab896, #a67c52);
-  }
+
   
   .container {
     width: 100%;
@@ -67,10 +59,8 @@ body {
     font-family: 'Apple Garamond Light', serif;
 
   }
-  .welcome p, h2 {
-    color: #5a3e2b;
-    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
-  }
+   
+
 
   
   .welcome p {
