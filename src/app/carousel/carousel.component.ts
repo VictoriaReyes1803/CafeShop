@@ -11,7 +11,7 @@ import { CommonModule } from '@angular/common';
 })
 export class CarouselComponent implements OnInit {
   currentIndex: number = 0; // Índice actual de la imagen
-  images: string[] = ['assets/granos.jpg', 'assets/granos2.jpg'];
+  images: string[] = ['assets/granos.webP', 'assets/granos2.jpg'];
 
   ngOnInit() {
     this.startCarousel();

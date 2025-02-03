@@ -260,7 +260,7 @@
   
   @keyframes backgroundCarousel {
     0% {
-      background-image: url('/assets/fondo5.png');
+      background-image: url('/assets/fondo5.webp');
     }
     33% {
       background-image: url('/assets/fondo4.png');
