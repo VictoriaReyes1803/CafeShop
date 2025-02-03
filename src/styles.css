@@ -16,3 +16,6 @@
     scroll-behavior: smooth;
     background: linear-gradient(to bottom, #cdb99f, #dab896, #a67c52);
   }
+  html {
+    scroll-behavior: smooth;
+  }

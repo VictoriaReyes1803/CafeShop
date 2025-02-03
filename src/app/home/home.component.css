@@ -6,6 +6,7 @@
     max-width: none;
   }
   
+
   /* Header */
   .header {
     display: flex;
@@ -14,10 +15,100 @@
     margin-bottom: 14%;
     border-bottom: 2px solid #ffffff9c;
   }
+  #nav-menu {
+    display: flex;
+    gap: 20px;
+  }
   
+  #nav-menu ul {
+    display: flex;
+    gap: 20px;
+  }
+  
+  #nav-menu ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .hamburger {
+    display: none;
+    margin: 5px;
+    cursor: pointer;
+    font-size: 38px;
+    transition: font-size 0.3s ease; 
+  }
+
+  .hamburger:hover i {
+    font-size: 50px; /* Tamaño más grande al pasar el mouse, por ejemplo */
+  }
+
+  @media (max-width: 768px) {
+    /* Show hamburger icon in mobile view */
+    .hamburger {
+      display: flex;
+    }
+  
+    /* Hide the navigation menu in mobile view */
+    #nav-menu {
+      display: none;
+      position: absolute;
+      top: 70px;
+      right: 20px;
+      background-color: #5a3e2b;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    }
+  
+    #nav-menu ul {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    /* Show the navigation menu when the hamburger icon is clicked */
+    #nav-menu.active {
+      display: flex;
+    }
+  }
+
+ 
   .logo {
     display: flex;
     align-items: center;
+  }
+  @media (max-width: 768px) {
+    .menu-items {
+      flex-direction: column;
+      gap: 50px;
+    }
+    .menu-item {
+      width: 80%;
+    }
+    
+    .about {
+      padding: 20px;
+    }
+    
+    .about h2 {
+      font-size: 2.5rem;
+    }
+    
+    .about p {
+      font-size: 1rem;
+    }
+    
+    .contact-form,
+    .contact-info {
+      width: 100%;
+    }
+  }
+ 
+  .hamburger .bar {
+    width: 30px;      /* Ancho de las barras */
+    height: 4px;      /* Alto de las barras */
+    background-color: white; /* Color de las barras */
+    border-radius: 5px; /* Bordes redondeados */
   }
   
   .logo img {
@@ -90,8 +181,7 @@
   .menu {
  
     text-align: center;
-    height: 100vh;
-
+    height: auto;
   }
   
   .menu h2 {
@@ -188,7 +278,7 @@
     padding: 40px;
 
     color: #333;
-    height: 100vh;
+    height: auto;
     text-align: center;
   }
 
@@ -215,13 +305,13 @@
   .about, .menu, .contact {
     padding: 50px 20px;
     color: #5a3e2b;
-    background: linear-gradient(to right, #dbcfbb, #dab896);
+   
   }
 
   .contact {
     text-align: center;
 
-    height: 95vh;
+    height: auto;
     padding: 40px 20px;
 
   }
