@@ -248,7 +248,7 @@
 
 
   .background-image {
-    animation: backgroundCarousel 15s infinite;
+    animation: backgroundCarousel 4s infinite;
     background-size: cover; /* Hace que la imagen cubra todo el área */
     background-position: center; /* Centra la imagen */
     height: 100vh;
@@ -259,17 +259,17 @@
   }
   
   @keyframes backgroundCarousel {
-    0% {
+    20% {
       background-image: url('/assets/fondo5.webp');
     }
-    33% {
+    /* 33% {
       background-image: url('/assets/fondo4.png');
     }
     66% {
       background-image: url('/assets/fondo8.jpg');
-    }
+    } */
     100% {
-      background-image: url('/assets/fondo9.jpg'); /* Vuelve a la primera imagen */
+      background-image: url('/assets/fondo9.svg'); /* Vuelve a la primera imagen */
     }
   }
   
