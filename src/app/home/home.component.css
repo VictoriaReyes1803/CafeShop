@@ -248,12 +248,12 @@
 
 
   .background-image {
-    animation: backgroundCarousel 4s infinite;
+    /* animation: backgroundCarousel 4s infinite; */
     background-size: cover; /* Hace que la imagen cubra todo el área */
     background-position: center; /* Centra la imagen */
     height: 100vh;
     width: 100%;
-    
+    background-image: url('/assets/fondo9.webp');
     justify-content: center;
     text-align: center;
   }
