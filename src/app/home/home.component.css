@@ -253,7 +253,7 @@
     background-position: center; /* Centra la imagen */
     height: 100vh;
     width: 100%;
-    background-image: url('/assets/fondo9.webp');
+    background-image: url('/assets/fondo5.webp');
     justify-content: center;
     text-align: center;
   }
